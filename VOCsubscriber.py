@@ -31,7 +31,7 @@ i = 0
 N = 10000
 while i < N:
     df_temp = pd.DataFrame(index=range(0,1), columns=['Time','VOCs','eCO2','Temp'])
-    m = subscribe.simple(topics, hostname="10.0.100.130", retained=False, msg_count=4)
+    m = subscribe.simple(topics, hostname="10.0.100.214", retained=False, msg_count=4)
     for a in m:
         y = a.payload
         if a.topic == 'time':
