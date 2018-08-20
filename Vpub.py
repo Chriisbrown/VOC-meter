@@ -6,6 +6,7 @@ Created on Wed Aug 15 12:12:21 2018
 """
 
 import paho.mqtt.publish as publish
+import datetime
 
 MQTT_SERVER = "10.0.100.214"
 MQTT_PATH = "time"
@@ -81,7 +82,7 @@ while Menu != 'q':
 		    if not ccs.readData():
 			x = str(ccs.getTVOC()) 
 			y = str(ccs.geteCO2()) 
-			with open('VOCdatabackup'+now.strftime("%Y-%m-%d %H-%M")+'.txt'' ,'a+') as f:
+			with open('VOCdatabackup'+now.strftime("%Y-%m-%d %H-%M")+'.txt' ,'a+') as f:
 			    t = str(time.time() - start_time) 
 			    s = t + ' ' + x + ' ' + y + ' ' + temp
 			    print s
