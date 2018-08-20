@@ -7,7 +7,7 @@ Created on Wed Aug 15 12:12:21 2018
 
 import paho.mqtt.publish as publish
 
-MQTT_SERVER = "10.0.100.130"
+MQTT_SERVER = "10.0.100.214"
 MQTT_PATH = "time"
 MQTT_PATH2 = "VOCs" 
 MQTT_PATH3 = "eCO2"
