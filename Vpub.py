@@ -23,7 +23,7 @@ def inputno(g, a, lim1, lim2):
     if g == 1:
         while True:
             try:
-                h = int(input(a))
+                h = int(raw_input(a))
                 if lim1 <= h <= lim2:
                     return h
                 else:
@@ -42,7 +42,7 @@ ccs.tempOffset = temp - 25.0
 
 Menu = '0'
 while Menu != 'q':
-    Menu = input('Press 1 to begin log, press q to quit: ')
+    Menu = raw_input('Press 1 to begin log, press q to quit: ')
 #Menu setup allowing the program to be run multiple times without turning the pi off
     now = datetime.datetime.now()
     if Menu == '1':
